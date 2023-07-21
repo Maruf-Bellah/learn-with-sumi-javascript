@@ -13,12 +13,20 @@ cars.pop()
 
 // console.log(cars);
 
-const car = {
+var car = {
     type: "Fiat",
     model: "500",
     color: "white"
 };
-car.color = "black"
-car.type = "aboul"
-console.log(car);
+// car.color = "black"
+// car.type = "aboul"
 
+
+function Car(make, model, year) {
+    this.make = make;
+    this.model = model;
+    this.year = year;
+  }
+  const auto = new Car('Honda', 'Accord', 1998);
+  
+  console.log(auto instanceof Car);
