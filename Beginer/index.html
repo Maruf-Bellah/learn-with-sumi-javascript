@@ -1,13 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <h1 id="demo"></h1>
 
-    <script src="./Statements.js"></script>
+<body>
+    <h1 style="font-family: Arial, Helvetica, sans-serif; font-size: 8vw; text-align: center;" id="body"></h1>
+
+    <script>
+        window.onload = displayClock();
+        function displayClock() {
+            var display = new Date().toLocaleTimeString();
+            document.getElementById('body').innerHTML = display;
+            setTimeout(displayClock, 1000);
+        }
+    </script>
+
+    <script src="./date.js"></script>
 </body>
+
 </html>
