@@ -32,7 +32,7 @@ if(age == 18){
 
 
 let show = (age > 20 ) ? 'i am aduld' : 'i and yang';
-console.log(show);
+// console.log(show);
 
 age = Number(age);
 if (isNaN(age)) {
@@ -48,4 +48,15 @@ if (isNaN(age)) {
 let names = null;
 let text = "missing";
 let result = names ?? text;
-console.log('The name is' + " " + result);
+// console.log('The name is' + " " + result);
+
+
+// The Optional Chainng Operator (?)
+
+
+// the ?. optional chaining operator সে রিটার্ন করে undefined , যদি object টা undefined / null হয় 
+
+const car = {type:"Fiat", model:"500", color:"white"};
+// let name1 = car?.name;
+let name1 = car?.color;
+console.log(name1);
