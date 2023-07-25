@@ -1,0 +1,26 @@
+
+// JSON = JavaScript Object Notation
+
+// JSON দেখতে পুরাই object এর মত তবে সেটা object না 
+// JSON কে object এ রুপান্তর করতে JSON.parse() এটা লেখতে হবে 
+// object কে JSON এ রুপান্তর করতে JSON.stringify() এটা লেখতে হবে
+
+
+
+let text = '{ "employees" : [' +
+'{ "firstName":"John" , "lastName":"Doe" },' +
+'{ "firstName":"Anna" , "lastName":"Smith" },' +
+'{ "firstName":"Peter" , "lastName":"Jones" } ]}';
+
+let show = JSON.parse(text);
+console.log(show);
+
+
+let obj = {
+    firstName : 'Maruf',
+    lastName : 'Bellah',
+    age: 20
+}
+
+let show1 = JSON.stringify(obj);
+console.log(show1);
