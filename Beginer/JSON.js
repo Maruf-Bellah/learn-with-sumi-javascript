@@ -7,6 +7,16 @@
 
 
 
+// JSON Syntax Rules========================================
+
+
+// Data is in name/value pairs
+// Data is separated by commas
+// Curly braces hold objects
+// Square brackets hold arrays
+
+
+
 let text = '{ "employees" : [' +
 '{ "firstName":"John" , "lastName":"Doe" },' +
 '{ "firstName":"Anna" , "lastName":"Smith" },' +
