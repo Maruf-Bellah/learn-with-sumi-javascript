@@ -60,7 +60,51 @@ for(i = 0; i < 100 ; i++){
 }
 
 
+function fizzFaz(numbers){
+    for(i = 1; i < numbers; i++){
+        if(i % 15 === 0){
+            // console.log(i + ' ' + 'fizzFaz');
+        }else if(i % 3 === 0){
+            // console.log(i + ' ' + 'fizz');
+        }else if(i % 5 === 0){
+            // console.log(i + ' ' + 'Faz');
+        }else{
+            // console.log(i);
+        }
+    }
+}
+fizzFaz(100);
+
+
 // === array থেকে false value কিভাবে খুজে বের করে বাদ দিতে পারি
+
+const mixedArr =[
+    'Maruf',
+    undefined,
+    'Learn with sumit',
+    false,
+    "",
+    'apple',
+    40,
+    'Bellah',
+    true,
+    "Thanks All",
+    NaN
+];
+let showFals = mixedArr.filter(function(el){
+    if(el){
+        return true;
+    }else{
+        return false;
+    }
+});
+
+let trueArray = mixedArr.filter(Boolean); // evabe o lekha jay 
+
+
+console.log(trueArray);
+
+// console.log(showFals);
 
 // === object থেকে false value কিভাবে খুজে বের করে বাদ দিতে পারি 
 
