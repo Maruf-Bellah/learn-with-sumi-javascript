@@ -101,10 +101,31 @@ let showFals = mixedArr.filter(function(el){
 
 let trueArray = mixedArr.filter(Boolean); // evabe o lekha jay 
 
-
-console.log(trueArray);
-
+// console.log(trueArray);
 // console.log(showFals);
 
 // === object থেকে false value কিভাবে খুজে বের করে বাদ দিতে পারি 
 
+const obj ={
+    a: 'Maruf',
+    b: undefined,
+    c:'Learn with sumit',
+    d: false,
+    e:"",
+    f: 'apple',
+    g:40,
+    h:'Bellah',
+    i:true,
+    j:"Thanks All",
+    k: NaN
+};
+
+const truthyObject = function(obj){
+    for(let i in obj){
+        if(!obj[i]){
+            delete obj[i];
+        }
+    }
+    return obj;
+}
+console.log(truthyObject(obj));
