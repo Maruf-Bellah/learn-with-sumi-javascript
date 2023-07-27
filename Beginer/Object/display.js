@@ -22,4 +22,6 @@ let myArray =Object.values(person)
 let myString = JSON.stringify(person)
 document.getElementById('demo').innerHTML = myString;
 
+// আরো আছে সেই গুলি দেখে নিবে w3school theke 
+
 
