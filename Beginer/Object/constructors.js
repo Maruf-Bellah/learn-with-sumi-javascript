@@ -15,12 +15,13 @@ const arif = new Person('Arif', 'Bellah', 25);
 const masum = new Person('Masum', 'Bellah', 50);
 
 
-maruf.nationality = "Bangladesh";
+// maruf.nationality ="Bangladesh"; // add korar jnno evabe use kore 
+Person.prototype.nationality ="Bangladesh";
 
 
 console.log(maruf.fullName());
 // console.log(arif.fullName());
 // console.log(masum.fullName());
 
-console.log(maruf);
-console.log(maruf.nationality);
+// console.log(maruf);
+console.dir(Person);
