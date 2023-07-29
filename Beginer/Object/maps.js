@@ -46,8 +46,51 @@ const show1 =fruits1.size;
 const show4 = fruits1.has('apple')
 
 // instanceof return the true ===================
-console.log(fruits1 instanceof Map);
+// console.log(fruits1 instanceof Map);
 
 
-// console.log(fruits1);
+// Map.forEach() return the key / value===========================================
+
+let text = '';
+fruits1.forEach(function( value , key){
+    text += key += value;
+})
+
+// myEntries() method একটা object কে iterator করে key আর value return দেয়  
+
+let text1 = '';
+fruits1.forEach(function( value , key){
+    text1 += key += value;
+})
+
+// key() method সেটা iteartor object রিটার্ন করে key এর সাথে 
+
+let text2 = '';
+for(const x of fruits.keys()){
+    text2 += x;
+}
+
+// value() method এটা value এর সাথে iterator value রিটার্ন করে 
+
+let text3 = '';
+for(const x of fruits1.values()){
+    text3 += x;
+}
+// console.log(text3);
+
+
+// এভাবে করলে পুরা value যোগ করে দিবে ============================
+
+let text4 = 0;
+for(const x of fruits1.values()){
+    text4 += x;
+}
+
+
+// Objects as Keys===========================
+
+
+
+
+console.log(text4);
 // console.log(show4);
