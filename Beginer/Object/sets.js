@@ -53,4 +53,17 @@ let text1 = '';
 for(const x of letters2.values()){
     text1 += x;
 }
-console.log(text);
+// console.log(text);
+
+// the Keys() method returns the same vlaues()
+// letters.keys()   // Returns [object Set Iterator]
+
+const myEntries = letters2.entries();
+
+let text2 = '';
+for(let x of myEntries){
+    text2 += x;
+}
+// console.log(text2);
+
+console.log(letters instanceof Set);  // Returns true
