@@ -18,4 +18,19 @@ let x = myFunction();            // x will be the window object
 function myFunction() {
     return this;
 }
-console.log(x);
+// console.log(x);
+
+
+
+// Invoking a Function as a Method================================
+
+const myObject = {
+    firstName: "Maruf",
+    lastName: "Bellah",
+    age: 32,
+    MyFunction0: function () {
+        return this.firstName + ' ' + this.lastName;
+    }
+}
+let shows = myObject.MyFunction0();
+console.log(shows);
