@@ -11,10 +11,11 @@ let show = myFunction(10, 2);
 // console.log(show);
 
 
-function sh(a, b) {
-    let result = a + b;
-    return result;
+// The Global Object=====================================
+
+let x = myFunction();            // x will be the window object
+
+function myFunction() {
+    return this;
 }
- sh(2, 3);
-const re = sh(12, 35);
-console.log(re);
+console.log(x);
