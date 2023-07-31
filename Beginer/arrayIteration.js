@@ -5,8 +5,8 @@
 const numbers = [45, 8,9,4,8,4,5,98,54,5,551,1,4,41];
 
 
-// const see = numbers.forEach(function(value , index , arr){
-//     console.log(arr);
+// const see = numbers.forEach(function( value, index,arr){
+//     console.log(value, index);
 // })
 
 
@@ -22,14 +22,14 @@ console.log(see); */
 
 // =============================================================
 
-// flatMap() একটা নতুন array দেয়  আর পুরাতন array পরিবর্ত্ন করে না map ও return করে value , index, array 
+// flatMap() একটা নতুন array দেয়  আর পুরাতন array পরিবর্ত্ন করে না map এর মত  return করে value , index, array 
 
-/* 
-const see = numbers.flatMap(function(value , index , arr){
+
+/* const see2 = numbers.flatMap(function(value , index , arr){
     return value * 5;
 })
 
-console.log(see); */
+console.log(see2); */
 
 
 // ====================================================================
@@ -44,7 +44,7 @@ console.log(see); */
 
 
 
-// reduce() এটা array এর মদ্ধে যত নাম্বার আছে সে বাম থেকে ডানের দিকে গুনে একটা যোগফল দিয়ে দেয়  এবং এক দেয় total মানে পুরা array এর যোগফল index, value , array 
+// reduce() এটা array এর মদ্ধে যত নাম্বার আছে সে বাম থেকে ডানের দিকে গুনে একটা যোগফল দিয়ে দেয়  এবং এক দেয় total মানে পুরা array এর যোগফল index, value , array ,priviace value ও দেয় 
 
 
 /*  const see = numbers.reduce(function(total, value , index , arr){

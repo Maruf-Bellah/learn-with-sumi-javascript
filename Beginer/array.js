@@ -1,4 +1,4 @@
-// array এমন এক variabel যেটা একের অধিক value ধারন করতে পারে 
+// array এমন এক variable  যেটা একের অধিক value ধারন করতে পারে 
 
 const names = ['maruf', 'bellah', 'hasan', 'mamun', 'khalid'];
 // console.log(names);
@@ -33,11 +33,12 @@ let acces = names[0];
 // Accessing the Last Array Element============
 
 let acceses = names[names.length -1];
-// console.log(acceses);
+console.log(acceses);
 
 // How to Recognize an Array  ===========
 
 let test = Array.isArray(names); //evabe korte paro 
+console.log(test);
 
- let test2 = names instanceof Array; //evabe korte paro 
-console.log(test2);
+ let test2 = names instanceof Array; //evabe o korte paro 
+// console.log(test2);

@@ -4,6 +4,8 @@
 // Array length
 
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
+const show =fruits[0]
+console.log(show);
 // let size = fruits.length;
 // console.log(size);
 
