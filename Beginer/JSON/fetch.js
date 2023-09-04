@@ -1,40 +1,33 @@
-// fetch('https://jsonplaceholder.typicode.com/todos/1')
-//   .then(response => response.json())
-//   .then(response => console.log(response))
-//   .then(json => console.log(json))
-
-// fetch('https://jsonplaceholder.typicode.com/todos/1')
-// .then(me => console.log(me))
-
-// const url = ('https://jsonplaceholder.typicode.com/todos/1');
-// fetch(url)
-// .then(show => show.json())
-// .then(json => console.log(json))
-
-function clickButton() {
-  const url = ('https://jsonplaceholder.typicode.com/todos/1');
-  fetch(url)
-  .then(show => show.json())
-  .then(json => console.log(json))
-}
-
-
-function loadUser(){
-  fetch('https://jsonplaceholder.typicode.com/users')
+function clickButton(){
+  fetch('https://jsonplaceholder.typicode.com/todos')
   .then(res => res.json())
-  .then(data => displayUser(data))
+  .then(datas => displayCommet(datas))
 }
 
-function displayUser(data){
- 
-  const ul = document.getElementById('user-list');
-  for(let show of data){
-    console.log(show.name);
-    // const li = document.createElement('li');
-    // li.innerText = 'user';
-    // ul.appendChild(li)
-    const li = document.createElement('li');
-    li.innerText = show.name;
-    ul.appendChild(li)
+function displayCommet(datas){
+  const container = document.getElementById('container');
+  for(let data of datas){
+    console.log(data);
+  const div = document.createElement('div');
+  div.style.border ='1px solid blue'
+  div.style.margin ='10px'
+  div.style.padding ='10px'
+  div.style.textAlign = 'center'
+  div.innerHTML = `
+    <p>${data.id}</p>
+    <p>${data.title}</p>
+
+  `
+  container.appendChild(div)
+  if(data.id === 15){
+    continue
+  }else{
+    // continue;
+    showButton()
   }
+  }
+}
+
+function showButton(){
+
 }
