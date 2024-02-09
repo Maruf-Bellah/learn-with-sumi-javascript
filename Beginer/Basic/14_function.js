@@ -9,29 +9,23 @@
 }
  myFunction(5, 3) */
 
-
-
-
-
 // Function is called, the return value will end up in x
 
 let x = myFunction(4, 3);
 console.log(x);
 
 function myFunction(a, b) {
-    // Function returns the product of a and b
-    return a * b;
+  // Function returns the product of a and b
+  return a * b;
 }
-
 
 // Convert Fahrenheit to Celsius:
 
 function toCelsius(fahrenheit) {
-    return (5 / 9) * (fahrenheit - 32);
+  return (5 / 9) * (fahrenheit - 32);
 }
 
-// let value = 'hello bor' + toCelsius(77) + 'how are you' ;
+// let value = "hello bor" + toCelsius(77) + "how are you";
 let value = `hello bor  ${toCelsius(77)}  how are you`;
 
 console.log(value);
-
