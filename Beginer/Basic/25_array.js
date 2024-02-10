@@ -1,6 +1,6 @@
-// array এমন এক variable  যেটা একের অধিক value ধারন করতে পারে 
+// array এমন এক variable  যেটা একের অধিক value ধারন করতে পারে
 
-const names = ['maruf', 'bellah', 'hasan', 'mamun', 'khalid'];
+const names = ["maruf", "bellah", "hasan", "mamun", "khalid"];
 // console.log(names);
 
 // accessing array =====================
@@ -15,9 +15,8 @@ names[0] = "ayesha bellah";
 
 // Converting an Array to a String==================
 
- const convert = names.toString();
-//  console.log(convert);
-
+const convert = names.toString();
+// console.log(convert);
 
 //  Arrays are Objects============================
 // console.log(typeof names);
@@ -32,13 +31,13 @@ let acces = names[0];
 
 // Accessing the Last Array Element============
 
-let acceses = names[names.length -1];
-console.log(acceses);
+let acceses = names[names.length - 1];
+// console.log(acceses);
 
 // How to Recognize an Array  ===========
 
-let test = Array.isArray(names); //evabe korte paro 
-console.log(test);
+let test = Array.isArray(names); //evabe korte paro
+// console.log(test);
 
- let test2 = names instanceof Array; //evabe o korte paro 
-// console.log(test2);
+let test2 = names instanceof Array; //evabe o korte paro
+console.log(test2);
