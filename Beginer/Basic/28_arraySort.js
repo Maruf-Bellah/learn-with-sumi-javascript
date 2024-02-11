@@ -154,4 +154,18 @@ const h = points7.sort(function (a, b) {
 function myArrayMin(arr) {
   return Math.min.apply(null, arr);
 }
-console.log(myArrayMin());
+// console.log(myArrayMin());
+
+// JavaScript arrays often contain objects:================
+
+const cars = [
+  { type: "Volvo", year: 2016 },
+  { type: "Saab", year: 2001 },
+  { type: "BMW", year: 2010 },
+];
+
+const i = cars.sort(function (a, b) {
+  return a.year - b.year;
+});
+
+console.log(i);
