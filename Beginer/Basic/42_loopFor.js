@@ -1,11 +1,9 @@
 // for Loops কোডের একটি ব্লককে বহুবার কার্যকর করতে পারে।
 
-let cars =['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I','K'];
-
-
+let cars = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "K"];
 
 for (let i = 0; i < cars.length; i++) {
-    // console.log(cars[i]);
+  // console.log(cars[i]);
 }
 
 /* 
@@ -26,40 +24,34 @@ do/while - also loops through a block of code while a specified condition is tru
 // And you can omit expression 1 (like when your values are set before the loop starts):
 
 for (let i = 0, len = cars.length, text = ""; i < len; i++) {
-    // text += cars[i] ;
-    // console.log(text);
-    // console.log(cars[i]);
+  text += cars[i];
+  // console.log(text);
+  // console.log(cars[i]);
 }
 
-/* 
-
-let i = 2;
+/* let m = 2;
 let len = cars.length;
 let text = "";
-for (; i < len; i++) {
-    //   text += cars[i] + "<br>";
-    console.log(cars[i]);
-}
- */
+for (; m < len; i++) {
+  // text += cars[m] + "<br>";
+  // console.log(cars[m]);
+} */
 
+// evabe o lekha jay
 
-// evabe o lekha jay 
-
-
-/* let i = 0;
+let i = 0;
 let len = cars.length;
 let text = "";
 for (; i < len; ) {
   text += cars[i] + "<br>";
   i++;
-  console.log(cars[i]);
-} */
-
-
-var i = 5;
-
-for (var i = 0; i < 10; i++) {
-  // some code
-  console.log(i);
+  // console.log(cars[i]);
 }
-// console.log(i); ekahne 10 pawa jabe karon var is gloper ===eta k thik korte let use korun 
+
+let m = 5;
+
+for (let i = 0; i < 10; i++) {
+  // some code
+  // console.log(i);
+}
+console.log(m); //ekahne 10 pawa jabe karon var is gloper ===eta k thik korte let use korun
