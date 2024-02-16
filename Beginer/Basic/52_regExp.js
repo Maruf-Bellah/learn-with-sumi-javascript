@@ -17,8 +17,35 @@
 
 let text = "Visit W3Schools!";
 let n = text.search("W3Schools"); // search koy number index e ace seta dekhay
-console.log(n);
+// console.log(n);
 
-let text1 = "Visit W3Schools!";
+// Use a regular expression to do a case-insensitive search for "w3schools" in a string:
+
+let text1 = "Visit W3Schools I know W3Schools";
+let n1 = text.search(/w3schools/i);
+// console.log(n1);
+
+let text2 = "Visit W3Schools!";
 let m = text.replace("W3Schools", "Maruf bellah"); // lekha k poribonton kora jay
-console.log(m);
+// console.log(m);
+
+// The test() method is a RegExp expression method.
+
+// It searches a string for a pattern, and returns true or false, depending on the result.
+// The following example searches a string for the character "e"
+
+const pattern = /e/;
+const b = pattern.test("The best things in life are free!");
+
+/* 
+// The exec() method is a RegExp expression method.
+
+// It searches a string for a specified pattern, and returns the found text as an object.
+
+// If no match is found, it returns an empty (null) object.
+
+// The following example searches a string for the character "e":
+
+ */
+const c = /e/.exec("The best things in life are free!");
+console.log(c);
