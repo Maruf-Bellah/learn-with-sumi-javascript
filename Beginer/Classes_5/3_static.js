@@ -14,7 +14,6 @@ class Car {
 
 const myCar = new Car("Ford");
 // console.log(Car.hello());
-
 // But NOT on a Car Object:
 // document.getElementById("demo").innerHTML = myCar.hello();
 // this will raise an error

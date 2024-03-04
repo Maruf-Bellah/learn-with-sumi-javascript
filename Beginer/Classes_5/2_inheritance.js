@@ -40,7 +40,7 @@ class Car2 {
 
 const myCar2 = new Car2("BMW");
 myCar2.carName = "Volvo"; // setter volvo
-// console.log(myCar2);
+console.log(myCar2);
 
 // Hoisting=====================================
 // Unlike functions, and other JavaScript declarations, class declarations are not hoisted.
@@ -58,4 +58,4 @@ class Car3 {
 
 //Now you can use the class:
 // const myCar3 = new Car("Ford");
-console.log(myCar3);
+// console.log(myCar3);
