@@ -4,15 +4,37 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      #container {
+        width: 400px;
+        height: 400px;
+        position: relative;
+        background: yellow;
+      }
+      #animate {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        background-color: red;
+      }
+    </style>
   </head>
   <body>
     <div id="div1">
-      <h3>hello how are you</h3>
-      <p>name maruf bellah</p>
-      <p id="intro"></p>
-      <p class="p"></p>
+      <input id="numb" />
+      <button type="button" onclick="myFunction()">Submit</button>
+      <button type="button" onclick="myFunction()" id="demo">Click!</button>
+
+      <p id="demo"></p>
+      <h1 onclick="changeText(this)">Click on this text!</h1>
     </div>
 
-    <script src="4_element.js"></script>
+    <p><button onclick="myMove()">Click Animation</button></p>
+
+    <div id="container">
+      <div id="animate"></div>
+    </div>
+
+    <script src="12_node.js"></script>
   </body>
 </html>
